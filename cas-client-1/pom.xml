@@ -4,7 +4,6 @@
 	<groupId>cn.infisa</groupId>
 	<artifactId>test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<build />
 	<properties>
 		<shiro.version>1.3.2</shiro.version>
 	</properties>
@@ -46,4 +45,13 @@
 		</dependency>
 
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.8.v20160314</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
