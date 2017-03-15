@@ -1,5 +1,5 @@
 language: java
 
 script:
-	- cd cas-client-1
-	-i mvn clean package  -e
+  - cd ./cas-client-1
+  - mvn clean package  -e
