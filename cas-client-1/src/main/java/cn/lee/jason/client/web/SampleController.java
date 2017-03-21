@@ -1,15 +1,17 @@
 package cn.lee.jason.client.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by jason on 17/3/14.
  */
 @RestController
-@RequestMapping("/sample")
+@RequestMapping(value = "sample")
 public class SampleController {
-    @RequestMapping("get")
+
+    @RequestMapping(value = "get", method = RequestMethod.GET)
     public String get() {
         return "sample";
     }
