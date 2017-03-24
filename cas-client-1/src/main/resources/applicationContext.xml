@@ -29,9 +29,10 @@
 		</property>
 		<property name="filterChainDefinitions">
 			<value>
+				/shiro-cas = casFilter
 				/logout = logoutFilter
 				/users/** = user
-				/** = casFilter
+				/** = user
 			</value>
 		</property>
 	</bean>
