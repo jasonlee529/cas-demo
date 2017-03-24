@@ -15,4 +15,9 @@ public class SampleController {
     public String get() {
         return "sample";
     }
+
+    @RequestMapping(value = "fail", method = RequestMethod.GET)
+    public String fail() {
+        return "sample";
+    }
 }

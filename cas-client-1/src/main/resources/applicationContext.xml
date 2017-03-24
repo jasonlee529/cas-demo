@@ -23,6 +23,7 @@
 		<property name="filters">
 			<map>
 				<!-- 添加casFilter到shiroFilter -->
+				<entry key="casFilter" value-ref="casFilter" />
 				<entry key="logoutFilter" value-ref="logoutFilter" />
 			</map>
 		</property>
@@ -30,7 +31,7 @@
 			<value>
 				/logout = logoutFilter
 				/users/** = user
-				/** = user
+				/** = casFilter
 			</value>
 		</property>
 	</bean>
