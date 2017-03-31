@@ -44,7 +44,11 @@
             <artifactId>shiro-cas</artifactId>
             <version>${shiro.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.jasig.cas.client</groupId>
+            <artifactId>cas-client-core</artifactId>
+            <version>3.2.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
