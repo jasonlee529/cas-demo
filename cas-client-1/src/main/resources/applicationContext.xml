@@ -51,6 +51,7 @@
     <!-- Shiro's main business-tier object for web-enabled applications -->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="subjectFactory" ref="casSubjectFactory"></property>
+        <property name="realm" ref="casRealm"/>
     </bean>
 
     <bean id="casSubjectFactory" class="org.apache.shiro.cas.CasSubjectFactory"></bean>

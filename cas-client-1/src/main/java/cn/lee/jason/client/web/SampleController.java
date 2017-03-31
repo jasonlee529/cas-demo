@@ -1,13 +1,13 @@
 package cn.lee.jason.client.web;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by jason on 17/3/14.
  */
-@RestController
+@Controller
 @RequestMapping(value = "sample")
 public class SampleController {
 
@@ -18,6 +18,6 @@ public class SampleController {
 
     @RequestMapping(value = "fail", method = RequestMethod.GET)
     public String fail() {
-        return "sample";
+        return "fail";
     }
 }
